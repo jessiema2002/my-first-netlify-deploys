@@ -18,7 +18,7 @@
     "clean-css": "^4.2.1",
     "netlify-lambda": "^1.0.2"
   },
-  "devDependencies"" {
+  "devDependencies": {
     "netlify-cli": "latest"
   },
   "proxy": {
