@@ -4,14 +4,10 @@ layout: layouts/base.njk
 ---
 
 
-<h2 id="get-yours">Get your own</h2>
-
 <p>
   Oh hi! Admiring this site that {% if details.name %}{{ details.name }}{% else %}I{% endif %} deployed? Well, you can get one too.
 </p>
-<p>
-  To deploy your own copy of this site, and enter the prize draw at {{ details.event }}, just click the button below, follow the instructions, and then tweet the link.
-</p>
+
 <p>
   <a href="https://app.netlify.com/start/deploy?repository=https://github.com/netlify/my-first-netlify-deploys">
     <img src="https://www.netlify.com/img/deploy/button.svg" alt="Deploy to Netlify">
@@ -29,3 +25,16 @@ layout: layouts/base.njk
   <li><a href="/next-steps/#redirects">Define redirect rules</a></li>
   <li><a href="/next-steps/#functions">Deploy a serverless function</a></li>
 </ol>
+
+<h3>Test backend </h3>
+<form name="contact" action="/thanks" netlify>
+  <p>
+    <label>Name <input type="text" name="name" /></label>
+  </p>
+  <p>
+    <label>Email <input type="email" name="email" /></label>
+  </p>
+  <p>
+    <button type="submit">Send</button>
+  </p>
+</form>
